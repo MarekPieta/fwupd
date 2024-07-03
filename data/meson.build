@@ -122,7 +122,7 @@ if build_daemon
     else
       # to debug what additional syscalls are required, we set SystemCallErrorNumber=SIGSYS
       # and then can do `coredumpctl debug` and get the syscall number with `(gdb) p $rax`
-      dynamic_options += ['SystemCallErrorNumber=SIGSYS']
+      dynamic_options += ['SystemCallErrorNumber=EPERM']
     endif
     dynamic_options += ['SystemCallFilter=' + ' '.join(syscall_filter)]
 

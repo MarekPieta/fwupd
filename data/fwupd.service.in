@@ -18,7 +18,6 @@ MemoryDenyWriteExecute=yes
 NoNewPrivileges=no
 PrivateDevices=no
 PrivateTmp=true
-ProtectClock=yes
 ProtectControlGroups=yes
 ProtectHome=yes
 ProtectHostname=yes
